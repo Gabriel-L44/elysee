@@ -142,5 +142,34 @@
     Dernière consultation automatique : 2025-04-30 à 10h12.
   </div>
 
+  <div id="delete-message" style="
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(255,0,0,0.1);
+  color: #ff4c4c;
+  font-family: 'Courier New', monospace;
+  padding: 8px 12px;
+  border: 1px solid red;
+  font-size: 0.9rem;
+  z-index: 9999;
+">
+  Suppression du document en cours... 78%
+</div>
+
+<script>
+let percentage = 78;
+const message = document.getElementById("delete-message");
+
+const interval = setInterval(() => {
+  percentage -= Math.random() * 0.05; // descend très lentement
+  if (percentage <= 0.1) {
+    percentage = 0.1;
+    clearInterval(interval);
+  }
+  message.textContent = `Suppression du document en cours... ${percentage.toFixed(1)}%`;
+}, 150);
+</script>
+
 </body>
 </html>
