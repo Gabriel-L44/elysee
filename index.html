@@ -1,50 +1,81 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Observation JN-23 – Profil médias sensibles</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Observation JN-23 – Classifié</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #f2f2f2;
+      font-family: "Courier New", monospace;
+      background-color: #121212;
+      color: #f8f8f8;
       margin: 0;
       padding: 2rem;
-      color: #333;
     }
+
     header {
       text-align: center;
       margin-bottom: 2rem;
     }
+
     .elysee-logo {
-      height: 80px;
+      height: 60px;
+      margin-bottom: 1rem;
     }
+
     .url-fake {
       font-size: 0.9rem;
-      color: gray;
-      margin-top: 0.5rem;
+      color: #888;
     }
+
+    .warning-banner {
+      background-color: #8b0000;
+      color: #fff;
+      padding: 1rem;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      border-top: 4px solid #ff0000;
+      border-bottom: 4px solid #ff0000;
+    }
+
+    h2 {
+      color: #ff4d4d;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 2rem;
-      background-color: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background-color: #1e1e1e;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
     }
+
     th, td {
       padding: 12px;
-      border: 1px solid #ccc;
+      border: 1px solid #ff0000;
       text-align: left;
     }
-    .blurred {
-      filter: blur(4px);
+
+    th {
+      background-color: #300;
+      color: #ffaaaa;
     }
-    .confidential {
-      background-color: #ffdede;
-      padding: 10px;
-      color: #a00;
-      font-weight: bold;
-      border-left: 5px solid red;
+
+    .blurred {
+      filter: blur(6px);
+    }
+
+    .classified-note {
+      margin-top: 2rem;
+      background-color: #2a0000;
+      color: #ffaaaa;
+      padding: 1rem;
+      border-left: 6px solid #ff0000;
     }
   </style>
 </head>
@@ -55,9 +86,9 @@
     <div class="url-fake">https://elysee.fr/intranet/confidentiel/JN-23.html</div>
   </header>
 
-  <div class="confidential">⚠️ DOCUMENT CONFIDENTIEL – NE PAS DIFFUSER</div>
+  <div class="warning-banner">⚠️ ACCÈS RESTRICTIF - DOCUMENT CLASSIFIÉ NIVEAU 3</div>
 
-  <h2>Observation JN-23 – Profil médias sensibles</h2>
+  <h2>Observation JN-23 – Profil Médias Sensibles</h2>
 
   <table>
     <thead>
@@ -75,36 +106,44 @@
         <td>Médiapart</td>
         <td>Élevée</td>
         <td>4/5</td>
-        <td>Proche mouv. critiques – Twitter actif</td>
+        <td>Discours systématiquement critique</td>
+      </tr>
+      <tr>
+        <td>C. Pujadas</td>
+        <td>France Télévisions</td>
+        <td>Moyenne</td>
+        <td>2/5</td>
+        <td>Neutre mais suivis importants</td>
       </tr>
       <tr class="blurred">
-        <td>J. ██████</td>
-        <td>France Inter</td>
+        <td>████████ ███</td>
+        <td>Libération</td>
+        <td>Haute</td>
+        <td>4/5</td>
+        <td>Relations supposées avec opposition</td>
+      </tr>
+      <tr class="blurred">
+        <td>J. █████</td>
+        <td>Konbini</td>
         <td>Moyenne</td>
         <td>3/5</td>
-        <td>Commentaires anti-politique</td>
+        <td>Engagement visible en ligne</td>
       </tr>
       <tr>
         <td>L. Boulet</td>
         <td>Le Monde</td>
         <td>Élevée</td>
         <td>5/5</td>
-        <td>Critique active des politiques sociales</td>
-      </tr>
-      <tr class="blurred">
-        <td>██████ ███</td>
-        <td>Konbini</td>
-        <td>Haute</td>
-        <td>3/5</td>
-        <td>Proximité supposée LFI / écologie radicale</td>
+        <td>Viralité importante sur sujets sensibles</td>
       </tr>
     </tbody>
   </table>
 
-  <p style="margin-top: 3rem; font-size: 0.8rem; color: gray;">
-    Page générée automatiquement – Module VeilleMédia.v3 (non validé).<br>
-    Dernière mise à jour : 2025-04-30 – Statut : ARCHIVÉ
-  </p>
+  <div class="classified-note">
+    ⚠️ Cette page appartient au module VeilleMédia v3.1.1<br>
+    Statut : ARCHIVÉ NON VALIDÉ — Accès réservé (DGCom / PR / Sécurité Intérieure).<br>
+    Dernière consultation automatique : 2025-04-30 à 10h12.
+  </div>
 
 </body>
 </html>
