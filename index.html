@@ -145,31 +145,34 @@
 
   <div id="delete-message" style="
   position: fixed;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(255,0,0,0.1);
-  color: #ff4c4c;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.7);
   font-family: 'Courier New', monospace;
-  padding: 8px 12px;
-  border: 1px solid red;
-  font-size: 0.9rem;
+  padding: 6px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-size: 0.85rem;
   z-index: 9999;
+  backdrop-filter: blur(3px);
 ">
-  Suppression du document en cours... 78%
+  Suppression du document en cours... 99%
 </div>
 
 <script>
-let percentage = 78;
+let percentage = 99;
 const message = document.getElementById("delete-message");
 
 const interval = setInterval(() => {
-  percentage -= Math.random() * 0.05; // descend très lentement
+  percentage -= Math.random() * 0.04; // descente lente
   if (percentage <= 0.1) {
     percentage = 0.1;
     clearInterval(interval);
   }
   message.textContent = `Suppression du document en cours... ${percentage.toFixed(1)}%`;
-}, 150);
+}, 160);
 </script>
 
 </body>
