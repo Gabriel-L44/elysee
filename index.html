@@ -158,17 +158,17 @@
   z-index: 9999;
   backdrop-filter: blur(3px);
 ">
-  Suppression du document en cours... 78%
+  Suppression du document en cours... 25%
 </div>
 
 <script>
-let percentage = 78;
+let percentage = 25;
 const message = document.getElementById("delete-message");
 
 const interval = setInterval(() => {
-  percentage -= Math.random() * 0.04; // descente lente
-  if (percentage <= 0.1) {
-    percentage = 0.1;
+  percentage += Math.random() * 0.4; // montée lente
+  if (percentage >= 100) {
+    percentage = 100;
     clearInterval(interval);
   }
   message.textContent = `Suppression des documents en cours... ${percentage.toFixed(1)}%`;
