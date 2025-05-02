@@ -166,7 +166,7 @@ let percentage = 25;
 const message = document.getElementById("delete-message");
 
 const interval = setInterval(() => {
-  percentage += Math.random() * 0.4; // montée lente
+  percentage += Math.random() * 0.2; // montée lente
   if (percentage >= 100) {
     percentage = 100;
     clearInterval(interval);
